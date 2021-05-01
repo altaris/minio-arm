@@ -1,7 +1,7 @@
 FROM arm32v7/alpine
 
 WORKDIR /usr/bin/
-RUN
+RUN                                                                        \
     apk add --no-cache curl                                             && \
     curl -sSLO https://dl.minio.io/server/minio/release/linux-arm/minio && \
     chmod 0755 ./minio
