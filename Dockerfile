@@ -1,4 +1,4 @@
-FROM arm32v7/ubuntu
+FROM arm32v7/alpine:3.12
 
 COPY qemu-arm-static /usr/bin
 
