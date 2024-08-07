@@ -4,10 +4,10 @@ USER	= altaris
 
 SUDO   ?= sudo
 
-all: build
+all: build push
 
 build:
-	$(SUDO) docker build . --build-arg ARCH=arm32v7 -t $(USER)/$(NAME):$(TAG)
+	$(SUDO) docker build . --platform linux/arm/v7 -t $(USER)/$(NAME):$(TAG)
 
 push:
 	$(SUDO) docker push $(USER)/$(NAME):$(TAG)
