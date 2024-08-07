@@ -1,5 +1,4 @@
-minio-arm
-=========
+# minio-arm
 
 A [minio](https://min.io/) docker image for ARM. Basically a copypasta from
 [this](https://github.com/pixelchrome/minio-arm) and
@@ -12,7 +11,7 @@ whence the use of
 [`arm32v7/alpine:3.12`](https://hub.docker.com/r/arm32v7/alpine) as a base
 image.
 
-**Warning**: The Minio server version is frozen to release
-`2022-10-24T18-35-07Z`. After that there seem to be some migrations needed, see
+**Warning**: The Minio server version is frozen at `2022-10-24T18-35-07Z`. After
+that there seem to be some migrations needed, see
 <https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html>
 , and I just can't be bothered with that today.
